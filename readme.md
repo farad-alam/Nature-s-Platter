@@ -1,1 +1,1 @@
-#Nature's Platter - A Beautiful Responsive theme Using Tailwindcss
+# Nature's Platter - A Beautiful Responsive theme Using Tailwindcss
