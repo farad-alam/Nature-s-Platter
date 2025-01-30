@@ -13,9 +13,13 @@
     />
   </head>
   <body class="font-sora bg-[#ffffff] text-[16px]">
-    <header class="w-full h-fit bg-gradient-to-t from-[#EFEBE3] to-gray-50  shadow-lg">
+    <header
+      class="w-full h-fit bg-gradient-to-t from-secondary-bg to-gray-50 shadow-lg"
+    >
       <!-- Navbar Section -->
-      <nav class="w-full md:w-10/12 mx-auto border-b md:border-none border-brand-primary">
+      <nav
+        class="w-full md:w-10/12 mx-auto border-b md:border-none border-brand-primary"
+      >
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <img
@@ -110,9 +114,9 @@
           <!-- banar intro -->
           <div
             id="banar-intro"
-            class="md:w-10/12 mx-auto text-center mt-20 space-y-9"
+            class="md:w-11/12 mx-auto text-center mt-20 space-y-9"
           >
-            <h1 class="text-[26px] md:text-6xl font-bold">
+            <h1 class="text-[26px] md:text-[56px] font-bold">
               Freshness <span class="text-brand-primary">You Can</span> <br />
               <span class="text-brand-primary">Count</span> On, Prices You’ll
               Love!
@@ -125,17 +129,73 @@
           <!-- Banar Thumbnail -->
           <div
             id="banar-thumbnail"
-            class="w-full mx-auto flex items-center justify-center "
+            class="w-full mx-auto flex items-center justify-center"
           >
-            <img class="w-8/12" src="./asset/hero-vegetables.png" alt="" />
+            <img class="w-10/12" src="./asset/hero-vegetables.png" alt="" />
           </div>
         </div>
       </section>
     </header>
     <main>
-        <section class="h-96">
-
-        </section>
+      <!-- Service Section -->
+      <section id="services" class="w-full min-h-[60vh] max-h-fit py-20">
+        <div id="service-context" class="w-4/5 mx-auto">
+          <h2 class="section-title pb-10">Services</h2>
+          <!-- Service Cards -->
+          <div id="cards" class="grid grid-cols-3 gap-4">
+            <!-- Card One -->
+            <div
+              id="service-card"
+              class="bg-secondary-bg py-6 px-4 rounded-xl flex flex-col gap-4 items-center justify-center shadow-lg"
+            >
+              <img
+                class="bg-base-100 p-4 rounded-full"
+                src="./asset/service.png"
+                alt=""
+              />
+              <h3 class="text-xl font-bold">24/7 Services</h3>
+              <p class="text-center text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                vitae voluptate cum totam? Obcaecati, quaerat architecto,
+              </p>
+            </div>
+            <!-- Card Two -->
+            <div
+              id="service-card"
+              class="bg-secondary-bg py-6 px-4 rounded-xl flex flex-col gap-4 items-center justify-center shadow-lg"
+            >
+              <img
+                class="bg-base-100 p-4 rounded-full"
+                src="./asset/delivery.png"
+                alt=""
+              />
+              <h3 class="text-xl font-bold">Fast Delivary</h3>
+              <p class="text-center text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                vitae voluptate cum totam? Obcaecati, quaerat architecto,
+              </p>
+            </div>
+            <!-- Card Three -->
+            <div
+              id="service-card"
+              class="bg-secondary-bg py-6 px-4 rounded-xl flex flex-col gap-4 items-center justify-center shadow-lg"
+            >
+              <img
+                class="bg-base-100 p-4 rounded-full"
+                src="./asset/healthy.png"
+                alt=""
+              />
+              <h3 class="text-xl font-bold">Healthy Products</h3>
+              <p class="text-center text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                vitae voluptate cum totam? Obcaecati, quaerat architecto,
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Demo Section -->
+      <section class="h-96 bg-accent"></section>
     </main>
     <footer></footer>
   </body>
