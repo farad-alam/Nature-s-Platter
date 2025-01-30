@@ -12,13 +12,18 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-sora">
-    <header class="border-b md:border-none border-brand-primary">
-      <nav class="w-[95%] md:w-10/12 mx-auto">
+  <body class="font-sora bg-[#ffffff] text-[16px]">
+    <header class="w-full h-fit bg-gradient-to-t from-[#EFEBE3] to-gray-50  shadow-lg">
+      <!-- Navbar Section -->
+      <nav class="w-full md:w-10/12 mx-auto border-b md:border-none border-brand-primary">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <img class="w-28 hidden lg:inline-flex" src="./asset/logo-header.png" alt="" />
-            <img class=" lg:hidden" src="./asset/logo_without_text.png" alt="" />
+            <img
+              class="w-28 hidden lg:inline-flex"
+              src="./asset/logo-header.png"
+              alt=""
+            />
+            <img class="lg:hidden" src="./asset/logo_without_text.png" alt="" />
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -67,10 +72,14 @@
             <a class="my-btn text-lg hidden lg:inline-flex">Register</a>
             <!-- navbar icon -->
             <div class="dropdown lg:hidden relative">
-              <div tabindex="0" role="button" class="btn btn-ghost text-brand-primary">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost text-brand-primary"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 "
+                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -85,7 +94,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative -left-32"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative -left-44"
               >
                 <li><a class="text-sm" href="#">Product</a></li>
                 <li><a class="text-sm" href="#">Services</a></li>
@@ -95,8 +104,39 @@
           </div>
         </div>
       </nav>
+      <!-- Banar section -->
+      <section id="banar" class="w-[95%] md:w-10/12 mx-auto">
+        <div id="banar-context" class="md:w-10/12 mx-auto">
+          <!-- banar intro -->
+          <div
+            id="banar-intro"
+            class="md:w-10/12 mx-auto text-center mt-20 space-y-9"
+          >
+            <h1 class="text-[26px] md:text-6xl font-bold">
+              Freshness <span class="text-brand-primary">You Can</span> <br />
+              <span class="text-brand-primary">Count</span> On, Prices You’ll
+              Love!
+            </h1>
+            <p class="md:px-20 md:text-[18px]">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <!-- Banar Thumbnail -->
+          <div
+            id="banar-thumbnail"
+            class="w-full mx-auto flex items-center justify-center "
+          >
+            <img class="w-8/12" src="./asset/hero-vegetables.png" alt="" />
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main>
+        <section class="h-96">
+
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
