@@ -18,9 +18,9 @@
     >
       <!-- Navbar Section -->
       <nav
-        class="w-full md:w-10/12 mx-auto border-b md:border-none border-brand-primary"
+        class="w-full md:w-10/12 bg-transparent mx-auto border-b md:border-none border-brand-primary"
       >
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-transparent">
           <div class="navbar-start">
             <img
               class="w-28 hidden lg:inline-flex"
@@ -138,11 +138,14 @@
     </header>
     <main>
       <!-- Service Section -->
-      <section id="services" class="w-full min-h-[60vh] max-h-fit py-20">
-        <div id="service-context" class="w-4/5 mx-auto">
-          <h2 class="section-title pb-10">Services</h2>
+      <section
+        id="services"
+        class="w-full min-h-[60vh] max-h-fit py-10 md:py-20"
+      >
+        <div id="service-context" class="w-11/12 md:w-4/5 mx-auto">
+          <h2 class="section-title pb-8 md:pb-10">Services</h2>
           <!-- Service Cards -->
-          <div id="cards" class="grid grid-cols-3 gap-4">
+          <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <!-- Card One -->
             <div
               id="service-card"
@@ -190,6 +193,264 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                 vitae voluptate cum totam? Obcaecati, quaerat architecto,
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular Products -->
+      <section id="popular-products" class="bg-secondary-bg">
+        <div
+          id="products-context"
+          class="w-11/12 md:w-4/5 mx-auto h-fit py-10 md:py-20"
+        >
+          <h2 class="section-title pb-10">Popular Products</h2>
+          <!-- Products Grids -->
+          <div
+            id="products-grids"
+            class="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch bg-black"
+          >
+            <!-- Main Card -->
+            <div
+              id="main-card"
+              class="relative md:col-span-4 bg-gradient-to-tl from-[#FFFFFF] to-[#53DB3A] rounded-lg pl-6 pt-8"
+            >
+              <div
+                id="main-card-content"
+                class="flex flex-col gap-6 items-start"
+              >
+                <h3 class="text-xl font-bold text-base-100">30% off</h3>
+                <p class="text-sm">
+                  Discover a world of treats, toys, and essentials handpicked
+                  for
+                </p>
+                <button class="bg-base-100 px-6 py-2 rounded-lg">
+                  Buy Now
+                </button>
+              </div>
+              <div
+                id="card-img"
+                class="text-right self-end flex items-end justify-end overflow-visible"
+              >
+                <img
+                  class="w-8/12 overflow-visible"
+                  src="./asset/vegetable-offer.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Child Cards holder-->
+            <div
+              id="child-cards"
+              class="md:col-span-8 grid grid-cols-2 md:grid-cols-3 auto-rows-min gap-3"
+            >
+              <!-- child cards -->
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/Onion.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Onion 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/tomato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Fresh Tomato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/potato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Potato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/Onion.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Onion 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/tomato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Fresh Tomato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/potato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Potato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/Onion.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Onion 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/tomato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Fresh Tomato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
+              <div
+                class="bg-base-100 shadow-xl w-full flex p-3 gap-3 items-center rounded-lg"
+              >
+                <figure class="">
+                  <img
+                    class="bg-secondary-bg rounded-xl"
+                    src="./asset/potato.png"
+                    alt="Movie"
+                  />
+                </figure>
+                <div class="">
+                  <div class="rating rating-xs gap-2">
+                    <input
+                      type="radio"
+                      name="rating-5"
+                      class="mask mask-star-2 bg-orange-400"
+                    />
+                    <small>4.5</small>
+                  </div>
+                  <h4 class="font-bold text-sm">Potato 1kg</h4>
+                  <small>$39.99</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
