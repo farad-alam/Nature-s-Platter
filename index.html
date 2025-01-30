@@ -5,8 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
     <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-purple-700">Natures Platter</h1>
+  <body class="font-sora">
+    <header class="border-b md:border-none border-brand-primary">
+      <nav class="w-[95%] md:w-10/12 mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img class="w-28 hidden lg:inline-flex" src="./asset/logo-header.png" alt="" />
+            <img class=" lg:hidden" src="./asset/logo_without_text.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-lg" href="#">Product</a></li>
+              <li><a class="text-lg" href="#">Services</a></li>
+              <li><a class="text-lg" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4">
+            <!-- Search & Cart -->
+            <div id="icons" class="hidden lg:inline-flex">
+              <button class="hover:bg-base-300 p-3 rounded-full cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+              <div class="hover:bg-base-300 p-3 rounded-full cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <a class="outlined-btn text-lg hidden lg:inline-flex">Login</a>
+            <a class="my-btn text-lg hidden lg:inline-flex">Register</a>
+            <!-- navbar icon -->
+            <div class="dropdown lg:hidden relative">
+              <div tabindex="0" role="button" class="btn btn-ghost text-brand-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 "
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative -left-32"
+              >
+                <li><a class="text-sm" href="#">Product</a></li>
+                <li><a class="text-sm" href="#">Services</a></li>
+                <li><a class="text-sm" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
