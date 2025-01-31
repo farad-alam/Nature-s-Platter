@@ -823,6 +823,13 @@ html {
   pointer-events: none;
 }
 
+.btn-circle {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
 :where(.btn:is(input[type="checkbox"])),
 :where(.btn:is(input[type="radio"])) {
   width: auto;
@@ -1910,6 +1917,34 @@ html {
   }
 }
 
+.btn-circle:where(.btn-xs) {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
+.btn-circle:where(.btn-sm) {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
+.btn-circle:where(.btn-md) {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
+.btn-circle:where(.btn-lg) {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 9999px;
+  padding: 0px;
+}
+
 .card-side {
   align-items: stretch;
   flex-direction: row;
@@ -2080,6 +2115,78 @@ html {
   top: -35%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.-top-\[25\%\] {
+  top: -25%;
+}
+
+.-left-\[25\%\] {
+  left: -25%;
+}
+
+.left-\[25\%\] {
+  left: 25%;
+}
+
+.left-\[29\%\] {
+  left: 29%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.-top-0 {
+  top: -0px;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.-top-52 {
+  top: -13rem;
+}
+
+.-top-32 {
+  top: -8rem;
+}
+
+.-top-24 {
+  top: -6rem;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
+.-top-16 {
+  top: -4rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-\[33\%\] {
+  left: 33%;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -2191,6 +2298,10 @@ html {
   width: 50%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -2213,6 +2324,14 @@ html {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-start {
@@ -2265,6 +2384,14 @@ html {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .space-y-9 > :not([hidden]) ~ :not([hidden]) {
@@ -2331,6 +2458,26 @@ html {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -2338,6 +2485,11 @@ html {
 .border-brand-primary {
   --tw-border-opacity: 1;
   border-color: rgb(23 152 0 / var(--tw-border-opacity, 1));
+}
+
+.border-green-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 252 231 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#102861\] {
@@ -2399,6 +2551,11 @@ html {
   background-color: rgb(74 222 128 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2445,6 +2602,10 @@ html {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
@@ -2547,6 +2708,46 @@ html {
   padding-bottom: 18rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[20\%\] {
+  padding-top: 20%;
+}
+
+.pt-\[25\%\] {
+  padding-top: 25%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2592,8 +2793,17 @@ html {
   line-height: 2.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-base-100 {
@@ -2614,6 +2824,11 @@ html {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
 }
 
 .shadow {
@@ -2866,6 +3081,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:-top-16 {
+    top: -4rem;
+  }
+
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -2902,6 +3121,10 @@ html {
     width: 75%;
   }
 
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -2928,6 +3151,10 @@ html {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
   }
 
   .md\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2965,6 +3192,11 @@ html {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .md\:pb-10 {
