@@ -457,10 +457,7 @@
       </section>
       <!-- Arrival and Offers -->
       <section class="w-full h-fit bg-base-100">
-        <div
-          id="offer-context"
-          class="w-11/12 md:w-4/5 mx-auto py-10 pb-64"
-        >
+        <div id="offer-context" class="w-11/12 md:w-4/5 mx-auto py-10 pb-72">
           <h2 class="section-title pb-10 md:pb-14">Arrival & Offers</h2>
           <!-- Offer Cards -->
           <div id="offer-cards" class="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -526,26 +523,42 @@
     <!-- Footer -->
     <footer class="bg-brand-primary relative">
       <!-- Footer Top -->
-      <div id="footer-top" class="absolute -top-1/4 left-[10%] w-4/5 mx-auto">
-        <div class="card card-side bg-secondary-bg shadow-xl w-full">
-          <figure>
+      <div
+        id="footer-top"
+        class="absolute -top-[35%] left-[10%] w-10/12 md:w-4/5 mx-auto"
+      >
+      <!-- Main Card -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-5 p-4 py-6 md:p-8 items-center bg-secondary-bg shadow-xl rounded-xl w-full"
+        >
+          <div id="img-div" class="flex justify-center">
             <img
-              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              class="w-10/12 md:w-9/12"
+              src="./asset/vegetable-busket.png"
               alt="Movie"
             />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">New movie is released!</h2>
-            <p>Click the button to watch on Jetflix app.</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Watch</button>
-            </div>
+          </div>
+          <div id="card-content" class="space-y-3 md:space-y-6 text-center md:text-start">
+            <h2 class="text-xl md:text-3xl font-bold text-brand-primary md:text-black">Get Grocery News!</h2>
+            <p class="text-sm md:text-lg text-center md:text-start">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <form action="" class="flex flex-col items-center md:items-start gap-3 md:gap-6">
+              <input
+                class="input-md  input-bordered input-success rounded-lg w-full md:w-10/12 placeholder:text-sm placeholder:text-brand-primary"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+              <button class="my-btn">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>
       <!-- Footer Menu -->
       <section
-        class="w-11/10 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 justify-between items-start md:items-end text-gray-300 pb-32 pt-64"
+        class="w-11/12 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 justify-between items-start md:items-end text-gray-300 pb-20 md:pb-32 pt-72"
       >
         <!-- colum one -->
         <nav>
