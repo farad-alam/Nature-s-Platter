@@ -2936,6 +2936,10 @@ html {
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+
   .md\:justify-self-center {
     justify-self: center;
   }
