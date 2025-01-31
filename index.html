@@ -457,7 +457,10 @@
       </section>
       <!-- Arrival and Offers -->
       <section class="w-full h-fit bg-base-100">
-        <div id="offer-context" class="w-11/12 md:w-4/5 mx-auto py-10 md:py-28">
+        <div
+          id="offer-context"
+          class="w-11/12 md:w-4/5 mx-auto py-10 pb-64"
+        >
           <h2 class="section-title pb-10 md:pb-14">Arrival & Offers</h2>
           <!-- Offer Cards -->
           <div id="offer-cards" class="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -518,8 +521,92 @@
         </div>
       </section>
       <!-- Demo Section -->
-      <section class="h-96 bg-accent"></section>
+      <!-- <section class="h-96 bg-accent"></section> -->
     </main>
-    <footer></footer>
+    <!-- Footer -->
+    <footer class="bg-brand-primary relative">
+      <!-- Footer Top -->
+      <div id="footer-top" class="absolute -top-1/4 left-[10%] w-4/5 mx-auto">
+        <div class="card card-side bg-secondary-bg shadow-xl w-full">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Watch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Menu -->
+      <section
+        class="w-11/10 md:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 justify-between items-start md:items-end text-gray-300 pb-32 pt-64"
+      >
+        <!-- colum one -->
+        <nav>
+          <img class="w-4/12 md:w-6/12" src="./asset/logo-footer.png" alt="" />
+          <p class="text-sm mt-4">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </nav>
+        <!-- Colum Two -->
+        <nav class="menu gap-4 md:justify-self-center text-sm md:text-lg">
+          <a class="link link-hover">Product</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+        <!-- Column Three -->
+        <nav class="justify-self-start md:justify-self-center">
+          <h6 class="text-sm mb-3">Follow Us</h6>
+          <div class="grid grid-flow-col gap-8">
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                ></path>
+              </svg>
+            </a>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </section>
+    </footer>
   </body>
 </html>
