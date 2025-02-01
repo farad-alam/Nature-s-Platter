@@ -25,14 +25,12 @@
 }
 
 .tomato {
-  animation-name: tomato-jump;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  @apply animate-bounce transition-transform duration-[5s] scale-125 ease-in-out ;
 }
 
-.green-veg{
+.green-veg {
   animation-name: green-veg;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
@@ -47,7 +45,7 @@
   }
 }
 
-@keyframes tomato-jump {
+/* @keyframes tomato-jump {
   0% {
   }
   50% {
@@ -56,7 +54,7 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 @keyframes green-veg {
   0% {
@@ -65,6 +63,5 @@
     transform: scale(1.4);
   }
   100% {
-   
   }
 }
